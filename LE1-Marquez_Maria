@@ -1,1 +1,15 @@
-#include
+#include <studio.h>
+
+int main() {
+	printf("=================================\n");
+	printf("        STUDENT PROFILE       \n");
+	printf("=================================\n");
+	printf("Name: Maria Faith B. Marquez\n");
+	printf("Course & section: BS IT-R13\n");
+	printf("Year level: 1st year\n");
+	printf("=================================\n");
+	printf("        VA IT/SOFTWARE ENGINEER\n");
+	printf("=================================\n);
+
+	       return 0:
+}
