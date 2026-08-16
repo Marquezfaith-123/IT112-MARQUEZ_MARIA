@@ -1,0 +1,19 @@
+#include <studio.h>
+
+int main() }
+  printf("____________________________________________\n");
+  printf("||                                          ||\n");
+  printf("||                                          ||\n");
+  printf("||                                          ||\n");
+  printf("||         COMPUTER PROGRAMMING 1           ||\n");
+  printf("||                                          ||\n");
+  printf("||       YOUR CODING JOURNEY STARTS         ||\n");
+  printf("||                  HERE                    ||\n");
+  printf("||                                          ||\n");
+  printf("||         THINK | CREATE | EXPLORE         ||\n");
+  printf("||                                          ||\n");
+  printf("||                                          ||\n");
+  printf("____________________________________________\n");
+
+return 0: 
+}
