@@ -1,0 +1,66 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+int main() {
+    int n, i;
+    int largest;
+
+    char sentence[200];
+    int vowels = 0;
+
+    // PART 1: FIND THE LARGEST ELEMENT IN AN ARRAY
+    printf("====================================\n");
+    printf(" PART 1: LARGEST ELEMENT IN AN ARRAY\n");
+    printf("====================================\n");
+
+    printf("How many elements do you want to enter? ");
+    scanf("%d", &n);
+
+    if (n <= 0 || n > 100) {
+        printf("Invalid number of elements.\n");
+        return 1;
+    }
+
+    int numbers[100];
+
+    for (i = 0; i < n; i++) {
+        printf("Enter integer %d: ", i + 1);
+        scanf("%d", &numbers[i]);
+    }
+
+    largest = numbers[0];
+
+    for (i = 1; i < n; i++) {
+        if (numbers[i] > largest) {
+            largest = numbers[i];
+        }
+    }
+
+    printf("\nLargest element: %d\n", largest);
+
+    // PART 2: COUNT THE NUMBER OF VOWELS
+    printf("\n====================================\n");
+    printf(" PART 2: COUNTING VOWELS IN A STRING\n");
+    printf("====================================\n");
+
+    getchar(); // Clear the newline left by scanf
+
+    printf("Enter a word or sentence: ");
+    fgets(sentence, sizeof(sentence), stdin);
+
+    for (i = 0; sentence[i] != '\0'; i++) {
+        char ch = tolower((unsigned char)sentence[i]);
+
+        if (ch == 'a' || ch == 'e' || ch == 'i' ||
+            ch == 'o' || ch == 'u') {
+            vowels++;
+        }
+    }
+
+    printf("Number of vowels: %d\n", vowels);
+
+    printf("\nProgram completed successfully!\n");
+
+    return 0;
+}
